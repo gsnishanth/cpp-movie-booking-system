@@ -49,7 +49,7 @@ int main() {
         cout << "1. Display Seats\n";
         cout << "2. Book a Seat\n";
         cout << "3. Exit\n";
-        cout
+        
 
 
 
