@@ -13,3 +13,22 @@ void displaySeats(char seats[ROWS][COLS]) {
         cout << endl;
     }
 }
+void bookSeat(char seats[ROWS][COLS]) {
+    int row, col;
+    cout << "Enter row (0-4): ";
+    cin >> row;
+    cout << "Enter column (0-4): ";
+    cin >> col;
+
+    if (row >= 0 && row < ROWS && col >= 0 && col < COLS) {
+        if (seats[row][col] == 'O') {
+            seats[row][col] = 'X';
+            cout << "Seat booked successfully!\n";
+        } else {
+            cout << "Sorry, this seat is already booked.\n";
+        }
+    } else {
+        cout << "Invalid seat position.\n";
+    }
+}
+
