@@ -32,3 +32,16 @@ void bookSeat(char seats[ROWS][COLS]) {
     }
 }
 
+int main() {
+    char seats[ROWS][COLS];
+
+    // Initialize all seats as open
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0; j < COLS; j++) {
+            seats[i][j] = 'O';
+        }
+    }
+
+
+
+
