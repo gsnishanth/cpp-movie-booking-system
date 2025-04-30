@@ -49,6 +49,24 @@ int main() {
         cout << "1. Display Seats\n";
         cout << "2. Book a Seat\n";
         cout << "3. Exit\n";
+        switch (choice) {
+            case 1:
+                displaySeats(seats);
+                break;
+            case 2:
+                bookSeat(seats);
+                break;
+            case 3:
+                cout << "Thank you for using the system!\n";
+                break;
+            default:
+                cout << "Invalid choice. Try again.\n";
+        }
+    } while (choice != 3);
+
+    return 0;
+}
+
         
 
 
