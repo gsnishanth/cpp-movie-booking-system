@@ -13,6 +13,7 @@ void displaySeats(char seats[ROWS][COLS]) {
         cout << endl;
     }
 }
+
 void bookSeat(char seats[ROWS][COLS]) {
     int row, col;
     cout << "Enter row (0-4): ";
@@ -41,7 +42,6 @@ int main() {
             seats[i][j] = 'O';
         }
     }
-}
 
     int choice;
     do {
@@ -49,26 +49,8 @@ int main() {
         cout << "1. Display Seats\n";
         cout << "2. Book a Seat\n";
         cout << "3. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
+        cout
 
-        switch (choice) {
-            case 1:
-                displaySeats(seats);
-                break;
-            case 2:
-                bookSeat(seats);
-                break;
-            case 3:
-                cout << "Thank you for using the system!\n";
-                break;
-            default:
-                cout << "Invalid choice. Try again.\n";
-        }
-    } while (choice != 3);
-
-    return 0;
-}
 
 
 
